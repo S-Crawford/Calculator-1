@@ -1,0 +1,161 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.calculator {
+  border: 1px solid #252525;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.calculator-keys {
+  background-color: #252525;
+}
+
+.calculator-screen {
+  width: 100%;
+  font-size: 5rem;
+  font-family:sans-serif;
+  height: 80px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+button {
+  height: 60px;
+  background-color: #333;
+  border-radius: 3px;
+  border: 1px solid #3f3f3f;
+  font-size: 2rem;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #9c9b9b;
+}
+
+.operator {
+  background-color: #a6a6a6;
+  color: #fff;
+}
+
+.all-clear {
+  background-color: #f0595f;
+  border-color: #b0353a;
+  color: #fff;
+}
+
+.all-clear:hover {
+  background-color: #f17377;
+}
+
+.equal-sign {
+  background-color: #f29849;
+  border-color: #aa682e;
+  color: #fff;
+  height: 100%;
+  grid-area: 2 / 4 / 6 / 5;
+}
+
+.equal-sign:hover {
+  background-color: #fda95e;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.disabled {
+  opacity: 60%;
+}
+
+/* PLANET VARIANTS */
+
+.moon {
+  background-color: #d0d0d0;
+  color: #252525;
+}
+
+.mercury {
+  background-color: #7e7d7d;
+}
+
+.venus {
+  background-color: #c79860;
+}
+
+.mars {
+  background-color: #e87738;
+}
+
+.jupiter {
+  background-color: #f7e8bd;
+  color: #252525;
+}
+
+.saturn {
+  background-color: #b4aa78;
+}
+
+.uranus {
+  background-color: #bee1e7;
+  color: #252525;
+}
+
+.neptune {
+  background-color: #7b62d9;
+}
+
+.moon:hover {
+  background-color: #dfdfdf;
+  color: #252525;
+}
+
+.mercury:hover {
+  background-color: #979797;
+}
+
+.venus:hover {
+  background-color: #e0af73;
+}
+
+.mars:hover {
+  background-color: #f78344;
+}
+
+.jupiter:hover {
+  background-color: #fcefcd;
+  color: #252525;
+}
+
+.saturn:hover {
+  background-color: #cfc592;
+}
+
+.uranus:hover {
+  background-color: #daf4f8;
+  color: #252525;
+}
+
+.neptune:hover {
+  background-color: #9277f5;
+}

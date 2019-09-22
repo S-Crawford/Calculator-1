@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator Web App</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>   
+    <div class="calculator" data-previous-key-type="none" data-first-value="0" data-operator="none">
+
+            <div class="calculator-screen" disabled>0</div>
+            
+            <div class="calculator-keys">
+                
+                <button type="button" class="operator" data-action="add" value="+">+</button>
+                <button type="button" class="operator" data-action="subtract" value="-">-</button>
+                <button type="button" class="operator" data-action="multiply" value="*">&times;</button>
+                <button type="button" class="operator" data-action="divide" value="/">&divide;</button>
+            
+                <button type="button" class="number" value="7">7</button>
+                <button type="button" class="number" value="8">8</button>
+                <button type="button" class="number" value="9">9</button>
+            
+                <button type="button" class="number" value="4">4</button>
+                <button type="button" class="number" value="5">5</button>
+                <button type="button" class="number" value="6">6</button>
+            
+                <button type="button" class="number" value="1">1</button>
+                <button type="button" class="number" value="2">2</button>
+                <button type="button" class="number" value="3">3</button>
+            
+                <button type="button" class="number" value="0">0</button>
+                <button type="button" class="decimal" value=".">.</button>
+                <button type="button" class="all-clear" data-action="all-clear" value="all-clear">AC</button>
+            
+                <button type="button" class="equal-sign operator" id="equal" data-action="calculate" value="=">=</button>
+                
+                <button type="button" class="planet moon" data-action="moon" value="Moon">Moon</button>
+                <button type="button" class="planet mercury" data-action="mercury" value="Mercury">Merc</button>
+                <button type="button" class="planet venus" data-action="venus" value="Venus">Ven</button>
+                <button type="button" class="planet mars" data-action="mars" value="Mars">Mars</button>
+                
+                <button type="button" class="planet jupiter" data-action="jupiter" value="Jupiter">Jup</button>
+                <button type="button" class="planet saturn" data-action="saturn" value="Saturn">Sat</button>
+                <button type="button" class="planet uranus" data-action="uranus" value="Uranus">Uran</button>
+                <button type="button" class="planet neptune" data-action="neptune" value="Neptune">Nept</button>
+                
+            </div>
+            </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+<!-- <div class="calculator-body">
+        <input type="text" class="output" id="display">
+        <div id="row-one">
+            <button class="operator" id="multiply">&times;</button>
+            <button class="operator" id="divide">&divide;</button>
+            <button class="operator" id="add">*</button>
+            <button class="operator" id="subtract">*</button>
+        </div>
+        <div id="row-two">
+                <button class="number-button">7</button>
+                <button class="number-button">8</button>
+                <button class="number-button">9</button>
+        </div>
+        <div id="row-three">
+                <button class="number-button">4</button>
+                <button class="number-button">5</button>
+                <button class="number-button">6</button>
+        </div>
+        <div id="row-four">
+                <button class="number-button">3</button>
+                <button class="number-button">2</button>
+                <button class="number-button">1</button>
+            </div>
+        <button class="number-button">0</button>
+        <button class="submit" id="equals">=</button>
+    </div> -->
