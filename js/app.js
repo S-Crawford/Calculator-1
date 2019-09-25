@@ -1,5 +1,6 @@
 const calculator = document.querySelector(".calculator");
 const display = document.querySelector(".calculator-screen");
+const planetInfoDisplay = document.querySelector(".planet-info-screen");
 const operator = document.querySelector(".operator");
 const equals = document.getElementById("#equal");
 const numbers = document.querySelector(".number");
@@ -89,6 +90,8 @@ const equalsButton = (currentDisplay) => {
     
     if(calculator.dataset.previousKeyType === "planet"){
         display.textContent = calculatePlanet(firstValue, operator);
+        //Use this to display in a second text window
+        planetInfoDisplay.textContent = ("your weight on " + operator + " is:");
     } else {
         display.textContent = calculate(firstValue, operator, secondValue);
     }
@@ -102,6 +105,7 @@ const allClear = () => {
     calculator.dataset.firstValue = "0";
     calculator.dataset.operator = "none";
     display.textContent = "0";
+    planetInfoDisplay.textContent = "Enter weight and select planet";
 }
 
 /* 
